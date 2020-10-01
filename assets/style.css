@@ -142,7 +142,7 @@ header h1 {
 .description__content .content__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 40px;
+  column-gap: 100px;
   margin-top: 24px;
 }
 
