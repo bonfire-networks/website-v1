@@ -147,7 +147,9 @@ header h1 {
 }
 
 .content__wrapper .wrapper__image {
-  background-color: #F8F8F8;
+  background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .content__wrapper .wrapper__text {
@@ -193,4 +195,5 @@ footer a {
   display: inline-block;
   text-decoration: none;
   width: 220px;
+  font-weight: 600;
 }
