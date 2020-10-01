@@ -142,12 +142,14 @@ header h1 {
 .description__content .content__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 40px;
+  column-gap: 100px;
   margin-top: 24px;
 }
 
 .content__wrapper .wrapper__image {
-  background-color: #F8F8F8;
+  background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .content__wrapper .wrapper__text {
@@ -193,4 +195,5 @@ footer a {
   display: inline-block;
   text-decoration: none;
   width: 220px;
+  font-weight: 600;
 }
