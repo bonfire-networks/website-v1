@@ -1,6 +1,11 @@
+@font-face { font-family: Surco; src: url('./fonts/surco-Regular.otf'); } 
+ @font-face { font-family: Surco; font-weight: bold; src: url('./fonts/surco-Bold.otf');}
+ @font-face { font-family: Surco; font-weight: lighter; src: url('./fonts/surco-Light.otf');}
+
 body, html {
   margin: 0;
   padding: 0;
+  font-family: Surco, sans-serif;
 }
 
 .wrapper__hero {
@@ -50,6 +55,11 @@ header h1 {
 .hero__cta form div {
   flex: 1;
 }
+
+.hero__cta form label {
+  font-size: 16px;
+}
+
 .hero__cta form input {
   margin-top: 4px;
   border: none;
