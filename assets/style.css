@@ -60,7 +60,7 @@ header h1 {
   font-size: 16px;
 }
 
-.hero__cta form input {
+.hero__cta form input.email {
   margin-top: 4px;
   border: none;
   width: 100%;
@@ -70,15 +70,16 @@ header h1 {
   text-indent: 8px;
 }
 
-.hero__cta form button {
+.hero__cta form input.button {
   background-color: #3CC25A;
-  height: 60px;
-  line-height: 60px;
+  height: 40px;
+  line-height: 40px;
   color: #fff;
   align-self: flex-end;
   border: none;
   border-radius: 6px;
-  width: 100px;
+  width: 200px;
+  margin-top: 8px;
 }
 
 .wrapper__intent {
