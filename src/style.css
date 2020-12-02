@@ -1,0 +1,64 @@
+@tailwind base;
+
+.section_starter {
+  position: relative;
+}
+.section_starter:before {
+  position: absolute;
+    content: "";
+    top: -110px;
+    width: 1px;
+    left: 50%;
+    height: 100px;
+    display: block;
+    background: linear-gradient(#e6646500, #9198e5);
+}
+
+.preview_circle__device:before {
+  position: absolute;
+    content: "";
+    top: -16px;
+    left: -16px;
+    width: 12px;
+    height: 12px;
+    display: block;
+    border-radius: 100%;
+    background: #CA4AB2;
+}
+.preview_circle__bridge:before {
+  position: absolute;
+    content: "";
+    top: -16px;
+    left: -16px;
+    width: 12px;
+    height: 12px;
+    display: block;
+    border-radius: 100%;
+    background: #2A85E7;
+}
+.preview_circle__apps:before {
+  position: absolute;
+    content: "";
+    top: -16px;
+    left: -16px;
+    width: 12px;
+    height: 12px;
+    display: block;
+    border-radius: 100%;
+    background: #18BC32;
+}
+.preview_circle__themes:before {
+  position: absolute;
+    content: "";
+    top: -16px;
+    left: -16px;
+    width: 12px;
+    height: 12px;
+    display: block;
+    border-radius: 100%;
+    background: #E32929;
+}
+
+@tailwind components;
+@tailwind utilities;
+ 

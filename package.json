@@ -1,0 +1,36 @@
+{
+  "name": "bonfire-website",
+  "version": "1.0.0",
+  "description": "bonfire landing page",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "postcss src/style.css -o static/dist/style.css",
+    "watch": "watch 'npm run build:css' ./src/layouts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/commonspub/bonfire-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/commonspub/bonfire-website/issues"
+  },
+  "homepage": "https://github.com/commonspub/bonfire-website#readme",
+  "devDependencies": {
+    "css-loader": "^5.0.1",
+    "nodemon": "^2.0.6",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.1.10",
+    "postcss-cli": "^8.3.0",
+    "postcss-loader": "^4.1.0",
+    "style-loader": "^2.0.0",
+    "tailwindcss": "^2.0.1",
+    "webpack": "^5.9.0",
+    "webpack-cli": "^4.2.0",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "watch": "^1.0.2"
+  }
+}
