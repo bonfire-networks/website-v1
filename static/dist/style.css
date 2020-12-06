@@ -575,6 +575,50 @@ video {
   background-repeat: no-repeat;
 }
 
+details > summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+details > summary::before { display: none;
+}
+
+details > summary::-webkit-details-marker { display: none;
+}
+
+.details-dropdown[open] > summary {
+  cursor: default;
+}
+
+.details-dropdown[open] > summary:before {
+  content: " ";
+  background: transparent;
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.details-dialog[open] > summary:before {
+  content: " ";
+  background: rgba(0,0,0,0.4);
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.details-modal {
+  margin-left: -16rem;
+  left: 50%;
+}
+
 .container {
   width: 100%;
 }
