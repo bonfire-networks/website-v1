@@ -32,8 +32,9 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
-    "watch": "^1.0.2",
     "@github/details-dialog-element": "^3.1.2",
-    "@github/details-menu-element": "^1.0.9"
+    "@github/details-menu-element": "^1.0.9",
+    "@tailwindcss/typography": "^0.3.1",
+    "watch": "^1.0.2"
   }
 }
