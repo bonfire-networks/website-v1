@@ -1,191 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bonfire</title>
-  <link rel="stylesheet" href="./assets/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="output.css" rel="stylesheet">
+    <script type="module" src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine-ie11.min.js" defer></script>
+    <title>bonfire</title>
 </head>
-
-<body>
-  <main class="wrapper">
-    <section class="wrapper__hero">
-      <header>
-        <span><img src="./assets/images/logo.png" alt="bonfire logo" /></span>
-        <h1>bonfire</h1>
-      </header>
-      <div class="hero__content">
-        <h2>Your plug & play federated social network</h2>
-        <p>Bonfire aims to expand your freedom as a user of social networks, puts your data in your own hands
-          (literally) and connects you with the people and communities you care about.
-        </p>
-        <div class="hero__cta">
-          <!-- Begin Mailchimp Signup Form -->
-          <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
-          <style type="text/css">
-            #mc_embed_signup {
-              background: #fff;
-              clear: left;
-              font: 14px Helvetica, Arial, sans-serif;
-            }
-
-            /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-          </style>
-          <div id="mc_embed_signup">
-            <form action="https://cafe.us2.list-manage.com/subscribe/post?u=8105506e2b7f13c0311bfb136&amp;id=e5a2d85d0a"
-              method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
-              target="_blank" novalidate>
-              <div id="mc_embed_signup_scroll">
-                <label for="mce-EMAIL">Want to be notified and test the beta?</label>
-                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address"
-                  required>
-                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
-                    name="b_8105506e2b7f13c0311bfb136_e5a2d85d0a" tabindex="-1" value=""></div>
-                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"
-                    class="button"></div>
-              </div>
-            </form>
-          </div>
-
-          <!--End mc_embed_signup-->
-          <!-- 
-          <h4>Want to be notified and test the beta?</h4>
-          <form>
-            <div>
-              <label for="email">Enter your email</label>
-              <input type="text" name="email" id="email" />
-            </div>
-            <button>Sign up</button>
-          </form> -->
+<body class="bg-blueGray-800">  
+  <header class="sticky  z-20 bg-blueGray-800 top-0 h-16 border-b border-blueGray-600">
+    <div class="max-w-screen-md h-16 mx-auto flex items-center">
+      <a href="index.html" class="mr-8 block bg-cover bg-no-repeat bg-center" style="width: 32px; height: 40px; background-image: url(./bonfire.png);"></a>
+      <div class="flex flex-1 items-center space-x-8">
+        <div class="flex items-center space-x-2 text-blueGray-300">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M2.94 6.412A2 2 0 002 8.108V16a2 2 0 002 2h12a2 2 0 002-2V8.108a2 2 0 00-.94-1.696l-6-3.75a2 2 0 00-2.12 0l-6 3.75zm2.615 2.423a1 1 0 10-1.11 1.664l5 3.333a1 1 0 001.11 0l5-3.333a1 1 0 00-1.11-1.664L10 11.798 5.555 8.835z" clip-rule="evenodd" />
+          </svg>
+          <span class="text-xs">info [at] bonfire.cafe </span>
         </div>
+        <a href="https://indieweb.social/@bonfire" target="blank" class="flex items-center hover:bg-blueGray-700 rounded py-2 px-3 cursor-pointer space-x-2 text-blueGray-300">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M2 5a2 2 0 012-2h7a2 2 0 012 2v4a2 2 0 01-2 2H9l-3 3v-3H4a2 2 0 01-2-2V5z" />
+            <path d="M15 7v2a4 4 0 01-4 4H9.828l-1.766 1.767c.28.149.599.233.938.233h2l3 3v-3h2a2 2 0 002-2V9a2 2 0 00-2-2h-1z" />
+          </svg>
+          <span class="text-xs">indieweb.social/@bonfire</span>
+        </a>
+        <a href="faq.html" class="flex items-center hover:bg-blueGray-700 rounded py-2 px-3 cursor-pointer space-x-2 text-blueGray-300">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+          </svg>
+          <span class="text-xs">Read our FAQ</span>
+        </a>
       </div>
-    </section>
-    <section class="wrapper__intent">
-      <h3>Everyone should be able to truly shape their social network experience, from the ground up.</h3>
-    </section>
-    <section id="device" class="wrapper__description">
-      <h4>what is bonfire?</h4>
-      <div class="description__content">
-        <h3>1. A plug-and-play device</h3>
-        <div class="content__wrapper">
-          <aside class="wrapper__image" style="background-image: url(./assets/images/device.png);">
-          </aside>
-          <div class="wrapper__text">
-            <div class="text__container">
-              <h5>Plug & play</h5>
-              <p>Ready to use (really, plug in and play)</p>
-            </div>
-            <div class="text__container">
-              <h5>Online, offline or local network</h5>
-              <p>Use the <a href="#apps">apps</a> offline or within your local network (e.g. spin up a
-                temporary autonomous network at a festival or protest)</p>
-            </div>
-            <div class="text__container">
-              <h5>Open</h5>
-              <p>Based on something like <a href="https://en.wikipedia.org/wiki/Raspberry_Pi">Raspberry Pi</a> and runs
-                free software</p>
-            </div>
-            <div class="text__container">
-              <h5>Friendly to intermediate tech users</h5>
-              <p>Preconfigured and well documented so you can easily run any <a href="#apps">Bonfire apps</a> and
-                extensions</p>
-            </div>
-            <div class="text__container">
-              <h5>Springboard for DIY</h5>
-              <p>Install additional apps on your device and take more control of your digital life</p>
-            </div>
-          </div>
-        </div>
+      <div class="">
+        <a target="blank" href="https://github.com/bonfire-networks" class="inline-flex items-center px-2.5 py-1.5 border border-transparent text-xs font-medium rounded text-blueGray-200 bg-blueGray-700 hover:bg-blueGray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blueGray-500">
+          <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
+          </svg>
+          <span class="ml-2">View the code</span>
+        </a>
       </div>
-
-
-      <div id="apps" class="description__content">
-        <h3>2. Federated apps</h3>
-        <div class="content__wrapper">
-          <aside class="wrapper__image" style="background-image: url(./assets/images/apps.svg);">
-          </aside>
-          <div class="wrapper__text">
-            <div class="text__container">
-              <h5>The Bonfire device runs Bonfire apps</h5>
-              <p>The <a href="https://commonspub.org" target="__blank">Bonfire ecosystem</a> is made up of people and
-                projects cooperating to build interoperable and extensible apps, that can easily plug and play with each
-                other.
-              </p>
-            </div>
-            <div class="text__container">
-              <h5>Diverse apps & extensions to choose from</h5>
-              <p>Do you need a basic social app? A collaborative federated blog? A decentralised forum for group
-                discussion? A space for sharing and curating links and files? An offers and needs map and bulletin board
-                for mutual aid? The community is developing unique approaches for these and more. </p>
-            </div>
-            <div class="text__container">
-              <h5>Modular</h5>
-              <p>Bonfire apps are made of building blocks you can use to create your own custom apps</p>
-            </div>
-            <div class="text__container">
-              <h5>Free / open source</h5>
-              <p>Customise the design, the code, or any aspect of the apps, and contribute your improvements to the
-                community.</p>
-            </div>
-
-          </div>
-        </div>
+    </div>    
+  </header>
+  <main class="max-w-screen-md mx-auto mt-6">
+    <span class="mt-16 block bg-cover bg-no-repeat bg-center" style="width: 317px; height: 75px; background-image: url(./logo.png);"></span>
+    <h1 class="text-blueGray-100 leading-relaxed tracking-wider text-3xl font-bold mt-6">A DIY social network for users </br> and communities  to rethink their social </br>and digital life.</h1>
+    <div class="flex items-center space-x-8 my-8">
+      <div class="flex items-center space-x-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="text-green-500 h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+        </svg>
+        <span class="font-regular text-sm text-blueGray-200">Open source</span>
       </div>
-
-      <div class="description__content">
-        <h3>3. A fediverse hosted service</h3>
-        <div class="content__wrapper">
-          <aside class="wrapper__image" style="background-image: url(./assets/images/server.jpg);">
-          </aside>
-          <div class="wrapper__text">
-            <div class="text__container">
-              <h5>Always online</h5>
-              <p>Hosts your fediverse identity on your own domain name (or using @your-instance.bonfire.cafe).</p>
-            </div>
-            <div class="text__container">
-              <h5>Complements your Bonfire device</h5>
-              <p>Stores your incoming messages/updates when your <a href="#device">device</a> is offline, and
-                syncs your <a href="#apps">apps</a> with the fediverse.</p>
-            </div>
-            <div class="text__container">
-              <h5>Doesn't hog your data</h5>
-              <p>Once your private data has synced to your device it is deleted from the server right away.</p>
-            </div>
-            <div class="text__container">
-              <h5>Respects your privacy</h5>
-              <p>End-to-end encryption for private activities (when available) means your data is never seen by
-                the
-                server or anyone else.</p>
-            </div>
-
-            <div class="text__container">
-              <h5>Open source & decentralised</h5>
-              <p>Possible to self-host, or use a compatible service.</p>
-            </div>
-
-          </div>
-        </div>
+      <div class="flex items-center space-x-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="text-green-500 h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+        </svg>
+        <span class="font-regular text-sm text-blueGray-200">Configurable</span>
       </div>
+      <div class="flex items-center space-x-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="text-green-500 h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+        </svg>
+        <span class="font-regular text-sm text-blueGray-200">Federated</span>
+      </div>
+    </div>
+    <div class="mt-6 prose prose-light text-blueGray-300">
+      <p>Bonfire is a federated and modular social network. It can be assembled and configured from the bottom-up to empower individuals and communities to design, operate and control their own digital lives.</p>
 
-      <section class="wrapper__intent">
-        <h3>Bonfire is an ecosystem aimed to empower individuals and communities to shape and control their tools
-          and experience.
-        </h3>
-
-      </section>
-
-      <footer>
-
-
-        <a rel="me" href="https://indieweb.social/@bonfire">get in touch</a> <a
-          href="https://github.com/bonfire-ecosystem/bonfire-app/blob/main/README.md">see the work in progress</a> <a
-          href="https://commonspub.org" target="__blank">get involved</a>
-      </footer>
-    </section>
-  </main>
+      <p>Built upon ActivityPub - a W3C standard protocol - every Bonfire instance can communicate with the rest of the so-called fediverse, a virtual decentralised social space where users of many different open source platforms can all interconnect.
+      The beauty of the fediverse lies also in its diversity. From posts and articles, to photo and video, from audio to blogging to gathering the range of activities that can be conducted on the fediverse is constantly growing.
+      With Bonfire we want to ensure that with the same login and without the need to check many different apps, a user can receive updates from all the users and topics they follow, independently from the platform where the activities are created.</p>
+      
+      <p>We want to push the boundaries further, and develop plugins to implement a whole range of new use cases, for example to enable economic activities and community coordination - in collaboration with the ValueFlows and ForgeFed efforts.</p>
+      
+      <p>We think mixing social and economic activities together in a federated social network can unlock a whole new range of unexplored scenarios and use cases that can empower solidarity networks: create offers and needs listings and geolocate them on a map; create, discuss and vote on proposals; coordinate labour and distribute outcomes among participants; create a timebanking app; create shared budgets or crowdfunding campaigns. Any of these scenarios can be well designed with a combination of economic and social features and flourish on a federated and open environment.</p>
+      
+      <p>As activists in first place, we want to partner with communities, progressive municipalities, cooperatives and grassroots movements to design and build together such plugins and make them available for everyone to use, remix and experiment.</p>
+    </div>
+    <div class="text-lg mt-8 text-blueGray-100">
+      <p class="font-semibold">Do you want to discuss with us a potential use case?</p>
+      <p class="text-base">Drop us a line at info[@]bonfire.cafe</p>
+    </div>
+    <footer>
+      <span class="mx-auto my-16 block bg-cover bg-no-repeat bg-center" style="width: 69px; height: 86px; background-image: url(./bonfire.png);"></span>
+    </footer>
+  </main>  
 </body>
-
 </html>
