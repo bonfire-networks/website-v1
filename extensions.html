@@ -14,7 +14,7 @@
     <div class="max-w-screen-xl px-4 h-16 mx-auto flex items-center">
       <a href="index.html" class="mr-8 block bg-cover bg-no-repeat bg-center" style="width: 32px; height: 40px; background-image: url(./bonfire.png);"></a>
       <div class="flex flex-1 items-center space-x-8">
-        <a href="extensions.html" class="flex items-center hover:bg-blueGray-700 rounded py-2 px-3 cursor-pointer space-x-2 text-blueGray-300">
+        <a href="extensions.html" class="bg-blueGray-600 flex items-center hover:bg-blueGray-700 rounded py-2 px-3 cursor-pointer space-x-2 text-blueGray-300">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd" d="M7 2a1 1 0 00-.707 1.707L7 4.414v3.758a1 1 0 01-.293.707l-4 4C.817 14.769 2.156 18 4.828 18h10.343c2.673 0 4.012-3.231 2.122-5.121l-4-4A1 1 0 0113 8.172V4.414l.707-.707A1 1 0 0013 2H7zm2 6.172V4h2v4.172a3 3 0 00.879 2.12l1.027 1.028a4 4 0 00-2.171.102l-.47.156a4 4 0 01-2.53 0l-.563-.187a1.993 1.993 0 00-.114-.035l1.063-1.063A3 3 0 009 8.172z" clip-rule="evenodd" />
           </svg>
@@ -37,45 +37,79 @@
       </div>
     </div>    
   </header>
-  <main class="max-w-screen-md mx-auto mt-6">
-    <span class="mt-16 block bg-cover bg-no-repeat bg-center" style="width: 317px; height: 75px; background-image: url(./logo.png);"></span>
-    <h1 class="text-blueGray-100 leading-relaxed tracking-wider text-3xl font-bold mt-6">A DIY social network for users </br> and communities  to rethink their social </br>and digital life.</h1>
-    <div class="flex items-center space-x-8 my-8">
-      <div class="flex items-center space-x-2">
-        <svg xmlns="http://www.w3.org/2000/svg" class="text-green-500 h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-          <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-        </svg>
-        <span class="font-regular text-sm text-blueGray-200">Open source</span>
+  <main class="max-w-screen-lg mx-auto mt-6">
+    <div>
+      <h1 class="text-3xl font-bold text-blueGray-100">Bonfire extensions</h1>
+      <div class="prose-light mt-4 text-blueGray-300 prose prose-sm w-full">Bonfire is a federated and modular social network. It can be assembled and configured from the bottom-up to empower individuals and communities to design, operate and control their own digital lives. Built upon ActivityPub - a W3C standard protocol - every Bonfire instance can communicate with the rest of the so-called fediverse, a virtual decentralised social space where users of many different open source platforms can all interconnect.</div>
+      <div class="grid grid-cols-3 gap-4 mt-6">
+        <div class="p-3 rounded-xl shadow-lg bg-white cursor-pointer hover:shadow-2xl hover:bg-blueGray-50 transform transition-colors">
+          <span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-sm font-medium bg-yellow-100 text-yellow-800">
+            <svg width="14" height="14" class="mr-2" viewBox="0 0 14 14" fill="none"><rect x="1" y="1" width="12" height="12" rx="6" stroke="#f2c94c" stroke-width="2" fill="none"></rect><path fill="#f2c94c" stroke="none" d="M 3.5,3.5 L3.5,0 A3.5,3.5 0 0,1 3.5, 7 z" transform="translate(3.5,3.5)"></path></svg>
+            <span>In development</span>
+          </span>
+          <div class="flex items-center space-x-3 mt-2">
+            <div class="w-24 h-24 rounded-3xl bg-gray-200"></div>
+            <div class="flex-1">
+              <h2 class="text-base font-bold text-gray-700">Me</h2>
+              <p class="prose prose-sm">Bonfire is a federated and modular social network. It can be assembled.</p>
+            </div>
+          </div>
+        </div>  
+        <div class="p-3 rounded-xl shadow-lg bg-white cursor-pointer hover:shadow-2xl hover:bg-blueGray-50 transform transition-colors">
+          <span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-sm font-medium bg-yellow-100 text-yellow-800">
+            <svg width="14" height="14" class="mr-2" viewBox="0 0 14 14" fill="none"><rect x="1" y="1" width="12" height="12" rx="6" stroke="#f2c94c" stroke-width="2" fill="none"></rect><path fill="#f2c94c" stroke="none" d="M 3.5,3.5 L3.5,0 A3.5,3.5 0 0,1 3.5, 7 z" transform="translate(3.5,3.5)"></path></svg>
+            <span>In development</span>
+          </span>
+          <div class="flex items-center space-x-3 mt-2">
+            <div class="w-24 h-24 rounded-3xl bg-gray-200"></div>
+            <div class="flex-1">
+              <h2 class="text-base font-bold text-gray-700">Social</h2>
+              <p class="prose prose-sm">Bonfire is a federated and modular social network. It can be assembled.</p>
+            </div>
+          </div>
+        </div>  
+        <div class="p-3 rounded-xl shadow-lg bg-white cursor-pointer hover:shadow-2xl hover:bg-blueGray-50 transform transition-colors">
+          <span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-sm font-medium bg-yellow-100 text-yellow-800">
+            <svg width="14" height="14" class="mr-2" viewBox="0 0 14 14" fill="none"><rect x="1" y="1" width="12" height="12" rx="6" stroke="#f2c94c" stroke-width="2" fill="none"></rect><path fill="#f2c94c" stroke="none" d="M 3.5,3.5 L3.5,0 A3.5,3.5 0 0,1 3.5, 7 z" transform="translate(3.5,3.5)"></path></svg>
+            <span>In development</span>
+          </span>
+          <div class="flex items-center space-x-3 mt-2">
+            <div class="w-24 h-24 rounded-3xl bg-gray-200"></div>
+            <div class="flex-1">
+              <h2 class="text-base font-bold text-gray-700">Boundaries</h2>
+              <p class="prose prose-sm">Bonfire is a federated and modular social network. It can be assembled.</p>
+            </div>
+          </div>
+        </div>  
+        <div class="p-3 rounded-xl shadow-lg bg-white cursor-pointer hover:shadow-2xl hover:bg-blueGray-50 transform transition-colors">
+          <span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-sm font-medium bg-yellow-100 text-yellow-800">
+            <svg width="14" height="14" class="mr-2" viewBox="0 0 14 14" fill="none"><rect x="1" y="1" width="12" height="12" rx="6" stroke="#f2c94c" stroke-width="2" fill="none"></rect><path fill="#f2c94c" stroke="none" d="M 3.5,3.5 L3.5,0 A3.5,3.5 0 0,1 3.5, 7 z" transform="translate(3.5,3.5)"></path></svg>
+            <span>In development</span>
+          </span>
+          <div class="flex items-center space-x-3 mt-2">
+            <div class="w-24 h-24 rounded-3xl bg-gray-200"></div>
+            <div class="flex-1">
+              <h2 class="text-base font-bold text-gray-700">Valueflows</h2>
+              <p class="prose prose-sm">Bonfire is a federated and modular social network. It can be assembled.</p>
+            </div>
+          </div>
+        </div>  
+        <div class="p-3 rounded-xl shadow-lg bg-white cursor-pointer hover:shadow-2xl hover:bg-blueGray-50 transform transition-colors">
+          <span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-sm font-medium bg-yellow-100 text-yellow-800">
+            <svg width="14" height="14" class="mr-2" viewBox="0 0 14 14" fill="none"><rect x="1" y="1" width="12" height="12" rx="6" stroke="#f2c94c" stroke-width="2" fill="none"></rect><path fill="#f2c94c" stroke="none" d="M 3.5,3.5 L3.5,0 A3.5,3.5 0 0,1 3.5, 7 z" transform="translate(3.5,3.5)"></path></svg>
+            <span>In development</span>
+          </span>
+          <div class="flex items-center space-x-3 mt-2">
+            <div class="w-24 h-24 rounded-3xl bg-gray-200"></div>
+            <div class="flex-1">
+              <h2 class="text-base font-bold text-gray-700">Zappa</h2>
+              <p class="prose prose-sm">Bonfire is a federated and modular social network. It can be assembled.</p>
+            </div>
+          </div>
+        </div>  
+        
+        
       </div>
-      <div class="flex items-center space-x-2">
-        <svg xmlns="http://www.w3.org/2000/svg" class="text-green-500 h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-          <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-        </svg>
-        <span class="font-regular text-sm text-blueGray-200">Configurable</span>
-      </div>
-      <div class="flex items-center space-x-2">
-        <svg xmlns="http://www.w3.org/2000/svg" class="text-green-500 h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-          <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-        </svg>
-        <span class="font-regular text-sm text-blueGray-200">Federated</span>
-      </div>
-    </div>
-    <div class="mt-6 prose prose-light text-blueGray-300">
-      <p>Bonfire is a federated and modular social network. It can be assembled and configured from the bottom-up to empower individuals and communities to design, operate and control their own digital lives.</p>
-
-      <p>Built upon ActivityPub - a W3C standard protocol - every Bonfire instance can communicate with the rest of the so-called fediverse, a virtual decentralised social space where users of many different open source platforms can all interconnect.
-      The beauty of the fediverse lies also in its diversity. From posts and articles, to photo and video, from audio to blogging to gathering the range of activities that can be conducted on the fediverse is constantly growing.
-      With Bonfire we want to ensure that with the same login and without the need to check many different apps, a user can receive updates from all the users and topics they follow, independently from the platform where the activities are created.</p>
-      
-      <p>We want to push the boundaries further, and develop plugins to implement a whole range of new use cases, for example to enable economic activities and community coordination - in collaboration with the ValueFlows and ForgeFed efforts.</p>
-      
-      <p>We think mixing social and economic activities together in a federated social network can unlock a whole new range of unexplored scenarios and use cases that can empower solidarity networks: create offers and needs listings and geolocate them on a map; create, discuss and vote on proposals; coordinate labour and distribute outcomes among participants; create a timebanking app; create shared budgets or crowdfunding campaigns. Any of these scenarios can be well designed with a combination of economic and social features and flourish on a federated and open environment.</p>
-      
-      <p>As activists in first place, we want to partner with communities, progressive municipalities, cooperatives and grassroots movements to design and build together such plugins and make them available for everyone to use, remix and experiment.</p>
-    </div>
-    <div class="text-lg mt-8 text-blueGray-100">
-      <p class="font-semibold">Do you want to discuss with us a potential use case?</p>
-      <p class="text-base">Drop us a line at info[@]bonfire.cafe</p>
     </div>
     <footer>
       <span class="mx-auto my-8 block bg-cover bg-no-repeat bg-center" style="width: 45px; height: 56px; background-image: url(./bonfire.png);"></span>
