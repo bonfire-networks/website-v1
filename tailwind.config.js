@@ -2,7 +2,7 @@ const colors = require('tailwindcss/colors')
 
 module.exports = {
   purge: {
-    enabled: true,
+    // enabled: true,
     content: [
     "index.html", "faq.html", "extensions/*", "apps/*", "extensions.html", "apps.html"
   ]
@@ -17,6 +17,9 @@ module.exports = {
         light: {
           css: [
             {
+              h2: {
+                color: theme('colors.white')
+              },
               a: {
                 color: theme('colors.white'),
               }
