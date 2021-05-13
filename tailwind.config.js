@@ -4,7 +4,7 @@ module.exports = {
   purge: {
     enabled: true,
     content: [
-    "index.html", "faq.html", "extensions/*", "apps/*"
+    "index.html", "faq.html", "extensions/*", "apps/*", "extensions.html", "apps.html"
   ]
   },
   darkMode: 'class', // or 'media' or 'class'
