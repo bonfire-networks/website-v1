@@ -196,7 +196,7 @@
                     x-show="openPanel === 3"
                     class="mt-2 pr-12">
                     <div class="prose text-blueGray-300">
-                    Our main goal if for you to be in control so that you can know and decide who can see something before you post. Now let’s get into the nitty gritty…
+                    One of our main goals if for users to be in control so that you can always know and decide who can see (or interact with) something before you post. We are working on tools such as <a href="extensions/boundaries.html">boundaries and circles</a> to help with this.
                     </div>
                 </dd>
                 </div>
@@ -233,111 +233,13 @@
                     class="mt-2 pr-12">
                     <div class="prose text-blueGray-300">
                         <ul>
-                            <li>No, there are currently no algorithms or biased recommendation algorithms to keep you online for hours on end. Content is simply shown in reverse chronological order, or in the order chosen by users.</li>
-                            <li>We are thinking about what algorithms created and controlled by users might look like, to tune the signal/noise ratio of feeds or simply help surface whatever is most relevant to you right now. Get in touch if you any thoughts!</li>
+                            <li>No, there are no algorithms or biased recommendation engines to keep you online for hours on end. Content is simply shown in reverse chronological order, or any other order chosen by you.</li>
+                            <li>We are thinking about what algorithms created and controlled by users might look like, to tune the signal/noise ratio of feeds or simply help surface whatever is most relevant to you right now. Get in touch if you have any thoughts or want to experiment...</li>
                         </ul>
                     </div>
                 </dd>
                 </div>
-                <div class="pt-6">
-                <dt class="text-lg">
-                    <!-- Expand/collapse question button -->
-                    <button
-                    x-description="Expand/collapse question button"
-                    @click="openPanel = (openPanel === 4 ? null : 4)"
-                    class="text-left w-full flex justify-between items-start text-gray-400">
-                    <span class="font-medium text-blueGray-300">
-                        What apps/extensions are available?
-                    </span>
-                    <span class="ml-6 h-7 flex items-center">
-                        <svg
-                        x-description="Heroicon name: outline/chevron-down"
-                        x-state:on="Open"
-                        x-state:off="Closed"
-                        x-bind:class="{ '-rotate-180': openPanel === 4, 'rotate-0': !(openPanel === 4) }"
-                        class="-rotate-180 h-6 w-6 transform"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </span>
-                    </button>
-                </dt>
-                <dd
-                    x-show="openPanel === 4"
-                    class="mt-2 pr-12">
-                    <div class="prose text-blueGray-300">
-                    <ul>
-                        <li>The Bonfire ecosystem is made up of people and projects cooperating to build interoperable and extensible apps, that can easily plug and play with each other.
-                        <li>Bonfire apps are open source and modular, meaning they’re made of building blocks you can use to create your own custom apps or extensions. Customise the design, the code, or any aspect, and contribute your improvements to the community.
-                        <li>There will be diverse apps & extensions to choose from. Do you need a basic social app? A collaborative federated blog? A decentralised forum for group discussion? A space for sharing and curating links and files? An offers and needs map and bulletin board for mutual aid? The community is developing unique approaches for these and more.
-                        <li>Extensions that have reach an alpha stage include:
-                            <ul>
-                                <li><b>Me</b></li>
-                                <li><b>Social</b></li>
-                            </ul>
-                        </li>
-                        <li>Extensions in development:
-                            <ul>
-                                <li><b>Conversation</b>: for threaded discussions and direct messaging, which includes threads (with multiple levels of replied), private and group messaging, forking a thread into a new discussion, following a thread to receive all replies, etc.</li>
-                                <li><b>Mutual Aid</b>: for users to post and search for requests and offers across different instances according to topic and/or geographical location. Based on the ValueFlows vocabulary. Especially suited for crisis response situations, but also meant for day-to-day life.</li>
-                                <li><b>Coordination</b>: create / publish (like a request for help) / prioritise / self-assign tasks. Based on the ValueFlows vocabulary, and will participate in the ForgeFed effort to federate the collaboration around software projects.</li>
-                                <li><b>Federated topics</b>: can consist of a hashtag, a category in a taxonomy, a location, etc. This enables users to find a topic they are interested in, see everything that was tagged with that (publicly or in their network), and follow it to receive any new tagged content. This will be interoperable with existing fediverse apps like Mastodon without requiring extra development on their end, and will create a decentralised graph of topics that can help relevant information flow from instance to instance.</li>
-                                <li><b>Search</b>: All content on a Bonfire instance (including remote content coming in via follows or federated topics) will also be aggregated in a local search index with which the user can search their own data, information from people or groups they follow, as well as content from topics or locations they are interested in from around the fediverse. This search will happen locally on their device (which is a plus for privacy), with results appearing instantly while typing a query, and being able to filter the results (e.g., by object or activity type, hashtags, topics, or language).</li>
-                            </ul>
-                        </ul>
-                    </div>
 
-
-                </dd>
-                </div>
-
-                <div class="pt-6">
-                <dt class="text-lg">
-                    <!-- Expand/collapse question button -->
-                    <button
-                    x-description="Expand/collapse question button"
-                    @click="openPanel = (openPanel === 7 ? null : 7)"
-                    class="text-left w-full flex justify-between items-start text-gray-400">
-                    <span class="font-medium text-blueGray-300">
-                        Who runs Bonfire?
-                    </span>
-                    <span class="ml-6 h-7 flex items-center">
-                        <svg
-                        x-description="Heroicon name: outline/chevron-down"
-                        x-state:on="Open"
-                        x-state:off="Closed"
-                        x-bind:class="{ '-rotate-180': openPanel === 7, 'rotate-0': !(openPanel === 7) }"
-                        class="-rotate-180 h-6 w-6 transform"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </span>
-                    </button>
-                </dt>
-                <dd
-                    x-show="openPanel === 7"
-                    class="mt-2 pr-12">
-
-                    <div class="prose text-blueGray-300">
-                    <ul>
-                        <li><b>Source Code</b>: While there’s a core team building Bonfire, we only control this website and what code is included the official repositories. Any developer can fork parts of the code they want to customise or create their own extensions.</li>
-                        <li><b>Infrastructure</b>: Bonfire instances are independently set up by technical users (though we are working to simplify that more and more), for themselves and their friends to use. They can be hosted on a connected device (like a server or even a Rasperry Pi) or on a cloud service. The Bonfire team (and possibly others) may also offer hosted services in the future (like a fediverse nomadic identity and syncing service, or encrypted backup storage, rather than full-blown hosting of Bonfire apps).</li>
-                        <li><b>Functionality</b>: Instance admins can choose which extensions and flavours to include, and users can also tailor their experience according to their needs. Anyone can suggest or request features or changes, though getting something done depends on individual team members or contributors to voluntarily take it on.</li>
-                        <li><b>Governance</b>: Bonfire instances form one part of a huge network, collectively called the Fediverse. It is made up of many instances - servers with different orientations, purposes and policies, each one running a specific federated application. Each instance admin chooses what app(s), extensions, and configuration, as well as their instance’s rules (usually in the form of a code of conduct), who can join or remain a user, what instances/groups/users they don’t wish to federate with, what device or cloud service they use, etc. Because instance admins are so powerful, our goal with Bonfire is to give regular users the same choices as much as technically possible, and to enable them to set up their own instances as easily as possible.</li>
-                        <li><b>Moderation</b>: Each instance is moderated by different people, resulting in diverse rules, themes and ambiance. Thus one given instance can suit you better than another, depending on your values, needs and interests.</li>
-                        <li><b>Economic</b>: Because the Bonfire and the wider fediverse is backed by volunteers, and not investors, it is more resilient. Even if one instance happens to go down, the rest of the network will continue to work uninterrupted. If an app or extension stops being maintained, someone else can pick it up. While there’s no need to “get a return on investment”, we think the fediverse can still improve in resilience, for example by having shared and/or nomadic user identities to avoid being tied to instances that may shut down, and by exploring different models for sustainability of the network and it’s contributors and participants.</li>
-                    </ul>
-                    </div>
-                </dd>
-                </div>
 
                 <div class="pt-6">
                 <dt class="text-lg">
@@ -347,7 +249,7 @@
                     @click="openPanel = (openPanel === 8 ? null : 8)"
                     class="text-left w-full flex justify-between items-start text-gray-400">
                     <span class="font-medium text-blueGray-300">
-                        Federated? What do you mean?
+                        Federated? What does that mean?
                     </span>
                     <span class="ml-6 h-7 flex items-center">
                         <svg
@@ -384,6 +286,46 @@
                                     <li>Open</li>
                                 </ul>
                             </li>
+                        </ul>
+                    </div>
+                </dd>
+                </div>
+
+
+                <div class="pt-6">
+                <dt class="text-lg">
+                    <!-- Expand/collapse question button -->
+                    <button
+                    x-description="Expand/collapse question button"
+                    @click="openPanel = (openPanel === 12 ? null : 12)"
+                    class="text-left w-full flex justify-between items-start text-gray-400">
+                    <span class="font-medium text-blueGray-300">
+                        Modular ecosystem? What does that mean?
+                    </span>
+                    <span class="ml-6 h-7 flex items-center">
+                        <svg
+                        x-description="Heroicon name: outline/chevron-down"
+                        x-state:on="Open"
+                        x-state:off="Closed"
+                        x-bind:class="{ '-rotate-180': openPanel === 12, 'rotate-0': !(openPanel === 12) }"
+                        class="-rotate-180 h-6 w-6 transform"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </span>
+                    </button>
+                </dt>
+                <dd
+                    x-show="openPanel === 12"
+                    class="mt-2 pr-12">
+                    <div class="prose text-blueGray-300">
+                        <ul>
+                        <li>Bonfire combines the power of federation and open data formats to create interoperable toolkits that people can use to easily build their own apps to meet their specific needs. Users are then free to interact with multiple people and groups using these apps hosted on their own device, regardless of what federated software these other people use.</li>
+                        <li>Every line of Bonfire’s code is available to be used or forked, in a collection of libraries that can be assembled and re-assembled to create all kinds of full-featured apps.</li>
                         </ul>
                     </div>
                 </dd>
@@ -488,6 +430,93 @@
                     <!-- Expand/collapse question button -->
                     <button
                     x-description="Expand/collapse question button"
+                    @click="openPanel = (openPanel === 4 ? null : 4)"
+                    class="text-left w-full flex justify-between items-start text-gray-400">
+                    <span class="font-medium text-blueGray-300">
+                        What features are available?
+                    </span>
+                    <span class="ml-6 h-7 flex items-center">
+                        <svg
+                        x-description="Heroicon name: outline/chevron-down"
+                        x-state:on="Open"
+                        x-state:off="Closed"
+                        x-bind:class="{ '-rotate-180': openPanel === 4, 'rotate-0': !(openPanel === 4) }"
+                        class="-rotate-180 h-6 w-6 transform"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </span>
+                    </button>
+                </dt>
+                <dd
+                    x-show="openPanel === 4"
+                    class="mt-2 pr-12">
+                    <div class="prose text-blueGray-300">
+                    <ul>
+                        <li>The Bonfire ecosystem is made up of people and projects cooperating to build interoperable and extensible apps, that can easily plug and play with each other.
+                        <li>Bonfire apps are open source and modular, meaning they’re made of building blocks you can use to create your own custom apps or extensions. Customise the design, the code, or any aspect, and contribute your improvements to the community.
+                        <li>There will be diverse apps & extensions to choose from. Do you need a basic social app? A collaborative federated blog? A decentralised forum for group discussion? A space for sharing and curating links and files? An offers and needs map and bulletin board for mutual aid? The community is developing unique approaches for these and more.
+                        <li>See the <a href="apps.html">apps</a> and <a href="extensions.html">extensions</a> pages for lists of what is available or being worked on.</li>
+                        </ul>
+                    </div>
+
+
+                </dd>
+                </div>
+
+                <div class="pt-6">
+                <dt class="text-lg">
+                    <!-- Expand/collapse question button -->
+                    <button
+                    x-description="Expand/collapse question button"
+                    @click="openPanel = (openPanel === 7 ? null : 7)"
+                    class="text-left w-full flex justify-between items-start text-gray-400">
+                    <span class="font-medium text-blueGray-300">
+                        Who runs Bonfire?
+                    </span>
+                    <span class="ml-6 h-7 flex items-center">
+                        <svg
+                        x-description="Heroicon name: outline/chevron-down"
+                        x-state:on="Open"
+                        x-state:off="Closed"
+                        x-bind:class="{ '-rotate-180': openPanel === 7, 'rotate-0': !(openPanel === 7) }"
+                        class="-rotate-180 h-6 w-6 transform"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </span>
+                    </button>
+                </dt>
+                <dd
+                    x-show="openPanel === 7"
+                    class="mt-2 pr-12">
+
+                    <div class="prose text-blueGray-300">
+                    <ul>
+                        <li><b>Source Code</b>: While there’s a core team building Bonfire, we only control this website and what code is included the official repositories. Any developer can fork parts of the code they want to customise, or go all-in and create their own extensions.</li>
+                        <li><b>Infrastructure</b>: Bonfire instances are independently set up by technical users (though we are working to simplify that more and more), for themselves and their friends to use. They can be hosted on a connected device (like a server or even a Rasperry Pi) or on a cloud service. The Bonfire team (and possibly others) may also offer hosted services in the future (most likely tools like a fediverse nomadic identity and syncing service, or encrypted backup storage, rather than full-service hosting of Bonfire apps).</li>
+                        <li><b>Functionality</b>: Instance admins can choose which extensions and flavours to include, and users can also tailor their experience according to their needs. Anyone can suggest or request features or changes, though of course getting something done depends on one or more team members or contributors to voluntarily take it on.</li>
+                        <li><b>Governance</b>: Bonfire instances form one part of a huge network, collectively called the Fediverse. It is made up of many instances - servers with different orientations, purposes and policies, each one running a specific federated application. Each instance's admin (or better yet, multiple admins selected democratically by its members) chooses what app(s), extensions, and configuration to set up, as well as their instance’s rules (usually in the form of a code of conduct), who can join or remain a user, what instances/groups/users they don’t wish to federate with, what device or cloud service they use, etc. Because instance admins are so powerful, our goal with Bonfire is to give regular users the same choices as much as technically possible, and to enable them to set up their own instances as easily as possible.</li>
+                        <li><b>Moderation</b>: Each instance is moderated by different people (typically the admins, or instance moderators), resulting in diverse rules, themes and ambiance. Thus one given instance can suit you better than another, depending on your values, needs and interests.</li>
+                        <li><b>Economic</b>: Bonfire and the wider fediverse are backed by volunteers, and not investors, which makes them more resilient. Even if one instance happens to go down, the rest of the network will continue to work uninterrupted. If an app or extension stops being maintained, someone else can pick it up. While there’s no need to “get a return on investment”, we think the fediverse can still improve in resilience, for example by having shared and/or nomadic user identities to avoid being tied to instances that may shut down, and by exploring different models for sustainability of the network and its contributors and participants.</li>
+                    </ul>
+                    </div>
+                </dd>
+                </div>
+
+                <div class="pt-6">
+                <dt class="text-lg">
+                    <!-- Expand/collapse question button -->
+                    <button
+                    x-description="Expand/collapse question button"
                     @click="openPanel = (openPanel === 11 ? null : 11)"
                     class="text-left w-full flex justify-between items-start text-gray-400">
                     <span class="font-medium text-blueGray-300">
@@ -515,47 +544,8 @@
                     class="mt-2 pr-12">
                     <div class="prose text-blueGray-300">
                         <ul>
-                        <li>The core team is made up of a collective of designers and developers which has been cooperating in various forms (and other names, the project was previously known as CommonsPub, itself a fork of what was then MoodleNet) since 2019, and started to rewrite and build Bonfire as a modular ecosystem at the end of 2020.</li>
-                        <li>You? Bonfire is an ecosystem aimed to empower individuals and communities to shape and control their digital lives. Everyone is invited to participate in some way, whether that means contributing to the available extensions or making their own, that doesn’t mean only coders, but really anyone who wants to get involved: users, instance admins, translators, designers, UX or accessibility testers, writers, activists, or anybody else who feels like they can offer something to move the project forward, or in another direction!</li>
-                        </ul>
-                    </div>
-                </dd>
-                </div>
-
-                <div class="pt-6">
-                <dt class="text-lg">
-                    <!-- Expand/collapse question button -->
-                    <button
-                    x-description="Expand/collapse question button"
-                    @click="openPanel = (openPanel === 12 ? null : 12)"
-                    class="text-left w-full flex justify-between items-start text-gray-400">
-                    <span class="font-medium text-blueGray-300">
-                        Modular ecosystem? What do you mean?
-                    </span>
-                    <span class="ml-6 h-7 flex items-center">
-                        <svg
-                        x-description="Heroicon name: outline/chevron-down"
-                        x-state:on="Open"
-                        x-state:off="Closed"
-                        x-bind:class="{ '-rotate-180': openPanel === 12, 'rotate-0': !(openPanel === 12) }"
-                        class="-rotate-180 h-6 w-6 transform"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </span>
-                    </button>
-                </dt>
-                <dd
-                    x-show="openPanel === 12"
-                    class="mt-2 pr-12">
-                    <div class="prose text-blueGray-300">
-                        <ul>
-                        <li>Bonfire combines the power of federation and open data formats to create interoperable toolkits that people can use to easily build their own apps to meet their specific needs. Users are then free to interact with multiple people and groups using these apps hosted on their own device, regardless of what federated software these other people use.</li>
-                        <li>Every line of Bonfire’s code is available to be used or forked, in a collection of libraries that can be assembled and re-assembled to create all kinds of full-featured apps.</li>
+                        <li>The core team is a small collective of designers and developers who has been cooperating in various forms (and various names, the project was previously known as CommonsPub, itself a fork of what was to be MoodleNet) since 2019, and started to rewrite and build Bonfire as a modular ecosystem at the end of 2020.</li>
+                        <li><strong>You?</strong> Bonfire is an ecosystem aimed to empower individuals and communities to shape and control their digital lives. Everyone is invited to participate in some way, whether that means contributing to the available extensions or making their own, that doesn’t mean only coders, but really anyone who wants to get involved: users, instance admins, translators, designers, UX or accessibility testers, writers, activists, or anybody else who feels like they can offer something to move the project forward, or in another direction!</li>
                         </ul>
                     </div>
                 </dd>
@@ -694,7 +684,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                   <path fill-rule="evenodd" d="M2.94 6.412A2 2 0 002 8.108V16a2 2 0 002 2h12a2 2 0 002-2V8.108a2 2 0 00-.94-1.696l-6-3.75a2 2 0 00-2.12 0l-6 3.75zm2.615 2.423a1 1 0 10-1.11 1.664l5 3.333a1 1 0 001.11 0l5-3.333a1 1 0 00-1.11-1.664L10 11.798 5.555 8.835z" clip-rule="evenodd" />
                 </svg>
-                <span class="text-xs">info [at] bonfire.cafe </span>
+                <span class="text-xs">team [at] bonfire.cafe </span>
               </div>
               <a href="https://indieweb.social/@bonfire" target="blank" class="flex items-center hover:bg-blueGray-700 rounded py-2 px-3 cursor-pointer space-x-2 text-blueGray-300">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
